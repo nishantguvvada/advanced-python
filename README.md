@@ -10,3 +10,8 @@
 
 - Decorator is a function that extends the behavior of another function without modifying the base function
 - Pass the function as an argument to the decorator
+
+## 3. Context Manager
+
+- Context Manager defines runtime context of an executed code, it has ** enter** and ** exit** methods, it is invoked using WITH statement
+- Context Managers can be implemented as a class and as a generator

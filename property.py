@@ -1,6 +1,7 @@
 # @property decorator allows to define a method as a property i.e. attribute
 # allows to add additional logic when reading, writing and deleting attributes
 # Be sure to give the additional functions (setter and deleter) the same name as the original attribute name
+# If an object defines __set__() or __delete__(), it is considered a data descriptor, @property is a succinct way of building a data descriptor
 
 class Rectangle:
 
