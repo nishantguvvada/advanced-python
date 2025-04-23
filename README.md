@@ -25,3 +25,8 @@
 
 - Function used in the child class to call the methods of the parent
 - It extends the functionality of the parent/inherited methods
+
+## 6. Static method
+
+- methods that belong to the class rather than any object of the class, used for general utility functions
+- instance methods are best for operations on instances of the class
