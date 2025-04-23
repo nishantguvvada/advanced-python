@@ -48,3 +48,46 @@ print(rectangle.height)
 del rectangle.width
 
 # get, set and delete attributes using methods
+
+# EXTRA: HOW TO HIDE CLASS OR INSTANCE VARIABLES
+
+# 1. Prefix with _ or __
+
+class MyClass:
+
+    def __init__(self):
+        self._semi_private = "Not recommended to access"
+        self.__private = "Name mangled"
+
+    __class_var = "Hidden class var"
+
+obj = MyClass()
+print(obj._semi_private) # No error, by convention don't use
+# print(obj.__private) # AttributeError: 'MyClass' object has no attribute '__private'.
+print(obj._MyClass__private)
+print(MyClass._MyClass__class_var)
+
+# Double underscore (__var) triggers name mangling in Python
+# Python internally renames __var to _ClassName__var to avoid accidental access or override, especially in subclasses.
+
+
+# 2. Use properties for controlled access
+
+class ControlledAccess:
+
+    def __init__(self):
+        self._private = "Private"
+
+    @property
+    def private(self): # using @property to restrict access
+        print(f"Access to private variable is restricted")
+
+    @private.setter
+    def private(self, value: str):
+        self._private = value
+        print(f"Private variable set to: {self._private}")
+
+obj = ControlledAccess()
+print(obj._private)
+obj.private # Output: Access to private variable is restricted
+obj.private = "Modified Private"

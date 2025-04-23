@@ -25,4 +25,4 @@ cook.get_information()
 janitor.get_information()
 
 print(Employee.is_valid_position("Engineer"))
-print(cook.is_valid_position("Scientist"))
+print(cook.is_valid_position("Scientist")) # a static method can be called by an instance of the class

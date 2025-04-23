@@ -5,6 +5,7 @@
 - Decorator used to define a method as a property i.e. can be accessed like an attribute
 - Additional logic can be added when reading, writing or deleting attributes
 - Decorator provides getter, setter and deleter method
+- EXTRA: HOW TO HIDE CLASS OR INSTANCE VARIABLES: Use \_ or \_\_ prefix or use @property to restrict access
 
 ## 2. Decorators
 
@@ -28,5 +29,13 @@
 
 ## 6. Static method
 
-- methods that belong to the class rather than any object of the class, used for general utility functions
-- instance methods are best for operations on instances of the class
+- Methods that belong to the class rather than any object of the class, used for general utility functions
+- Instance methods are best for operations on instances of the class
+- Static method can be accessed by the instance
+
+## 7. Class method
+
+- Class methods allow operations related to the class, takes class (cls) as the first parameter instead of self
+- Best for class level data
+- Class method can be accessed by the instance
+- EXTRA: HOW TO MAKE A METHOD INACCESSIBLE TO INSTANCES: Use `if not isinstance(cls, type): raise TypeError`
