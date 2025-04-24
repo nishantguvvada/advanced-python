@@ -39,3 +39,9 @@
 - Best for class level data
 - Class method can be accessed by the instance
 - EXTRA: HOW TO MAKE A METHOD INACCESSIBLE TO INSTANCES: Use `if not isinstance(cls, type): raise TypeError`
+
+## 8. Magic method
+
+- Magic methods are also called Dunder methods (double underscore example: **init **, **str **, **eq **)
+- They are automatically called by Python's built-in operations
+- They allow to define or customize behavior of operations
