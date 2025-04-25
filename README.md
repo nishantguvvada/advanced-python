@@ -5,6 +5,7 @@
 - Decorator used to define a method as a property i.e. can be accessed like an attribute
 - Additional logic can be added when reading, writing or deleting attributes
 - Decorator provides getter, setter and deleter method
+- If an object defines **set **() or **delete **(), it is considered a data descriptor, @property is a succinct way of building a data descriptor
 - EXTRA: HOW TO HIDE CLASS OR INSTANCE VARIABLES: Use \_ or \_\_ prefix or use @property to restrict access
 
 ## 2. Decorators
@@ -14,13 +15,13 @@
 
 ## 3. Context Manager
 
-- Context Manager defines runtime context of an executed code, it has ** enter** and ** exit** methods, it is invoked using WITH statement
+- Context Manager defines runtime context of an executed code, it has \_\_enter\_\_ and \_\_exit\_\_ methods, it is invoked using WITH statement
 - Context Managers can be implemented as a class and as a generator
 
 ## 4. Abstract Class
 
 - A class that cannot be instantiated on it's own, it is meant to be subclassed i.e. prevents instantiation of the class itself
-- Abstract class contain abstract methods, which are declared but have not implementation, requires children subclassing the abstract class to declare the abstract methods
+- Abstract class contain abstract methods, which are declared but have no implementation, requires children subclassing the abstract class to declare the abstract methods
 
 ## 5. Super method
 
@@ -42,6 +43,13 @@
 
 ## 8. Magic method
 
-- Magic methods are also called Dunder methods (double underscore example: **init **, **str **, **eq **)
+- Magic methods are also called Dunder methods (double underscore example: \_\_init\_\_, \_\_str\_\_, \_\_eq\_\_)
 - They are automatically called by Python's built-in operations
 - They allow to define or customize behavior of operations
+
+## 9. Lambda function
+
+- Lambda function is a small anonymous function for a one time use (throw away function)
+- They take any number of arguments, have only 1 expression
+- Helps to keep the namespace clean
+- Used with higher order functions sort(), map(), reduce(), filter()
