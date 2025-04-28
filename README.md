@@ -53,3 +53,7 @@
 - They take any number of arguments, have only 1 expression
 - Helps to keep the namespace clean
 - Used with higher order functions sort(), map(), reduce(), filter()
+
+## 10. map function
+
+- map function applies a give function to all items in a collection
