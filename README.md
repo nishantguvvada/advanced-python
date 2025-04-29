@@ -57,3 +57,13 @@
 ## 10. map function
 
 - map function applies a give function to all items in a collection
+
+## 11. filter function
+
+- filter function returns all elements of a collection that pass a condition
+
+## 12. reduce function
+
+- reduce function reduces all the elements of a collection to a single value
+- for loops are better in most cases
+- reduce function is better for a functional approach and readability
