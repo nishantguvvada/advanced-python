@@ -67,3 +67,8 @@
 - reduce function reduces all the elements of a collection to a single value
 - for loops are better in most cases
 - reduce function is better for a functional approach and readability
+
+## 13. \_\_name\_\_ == "\_\_main\_\_"
+
+- It allows the script to be imported or run standalone
+- Functions and classes in the module can be reused without the main block of code executing
