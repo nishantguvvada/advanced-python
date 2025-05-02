@@ -5,7 +5,7 @@
 - Decorator used to define a method as a property i.e. can be accessed like an attribute
 - Additional logic can be added when reading, writing or deleting attributes
 - Decorator provides getter, setter and deleter method
-- If an object defines **set **() or **delete **(), it is considered a data descriptor, @property is a succinct way of building a data descriptor
+- If an object defines \_\_set\_\_() or \_\_delete\_\_(), it is considered a data descriptor, @property is a succinct way of building a data descriptor
 - EXTRA: HOW TO HIDE CLASS OR INSTANCE VARIABLES: Use \_ or \_\_ prefix or use @property to restrict access
 
 ## 2. Decorators
@@ -21,7 +21,7 @@
 ## 4. Abstract Class
 
 - A class that cannot be instantiated on it's own, it is meant to be subclassed i.e. prevents instantiation of the class itself
-- Abstract class contain abstract methods, which are declared but have no implementation, requires children subclassing the abstract class to declare the abstract methods
+- Abstract class contains abstract methods, which are declared but have no implementation, requires children subclassing the abstract class to declare the abstract methods
 
 ## 5. Super method
 
@@ -56,7 +56,7 @@
 
 ## 10. map function
 
-- map function applies a give function to all items in a collection
+- map function applies a given function to all items in a collection
 
 ## 11. filter function
 
@@ -72,3 +72,9 @@
 
 - It allows the script to be imported or run standalone
 - Functions and classes in the module can be reused without the main block of code executing
+
+## 14. Inheritance
+
+- Inheritance allows a class to inherit the attributes and methods from another class
+- helps in code reusability and extensibility
+- class Child(Parent) or class Sub(Super)
