@@ -78,3 +78,8 @@
 - Inheritance allows a class to inherit the attributes and methods from another class
 - helps in code reusability and extensibility
 - class Child(Parent) or class Sub(Super)
+
+## 15. Multiple and Multi-level inheritance
+
+- Mulitple inheritance = inherit from more than one parent class
+- Multi-level inheritance = inherit from a parent which inherits from another parent
