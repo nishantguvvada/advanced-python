@@ -83,3 +83,8 @@
 
 - Mulitple inheritance = inherit from more than one parent class
 - Multi-level inheritance = inherit from a parent which inherits from another parent
+
+## 16. Polymorphism
+
+- Polymorphism is a greek word that means to have many forms
+- Two ways to achieve polymorphism: Inheritance and Duck Typing
