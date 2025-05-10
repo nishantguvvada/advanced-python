@@ -94,3 +94,11 @@
 - Duck typing is another way to achieve polymorphism besides inheritance
 - Objects must have minimum necessary attributes/methods
 - "If it looks like a duck and quack like a duck, it must be a duck"
+
+## 18. Exception
+
+- Exception is an event that interrupts the flow of a program
+- try: Code that can cause an exception is put in the try block
+- except: handling of exception is implemented in except block
+- else: Code that should run only if no exception occurs in try but for which exceptions should not be caught is put in else block
+- finally: Code in the finally block will run whether or not an exception occurred

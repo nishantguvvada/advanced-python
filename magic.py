@@ -9,7 +9,7 @@ class Book:
         self.author = author
         self.num_pages = num_pages
 
-    def __str__(self):
+    def __str__(self): # The __str__ method in Python is called when a string representation of an object is needed. 
         return f"'{self.title}' by {self.author}"
     
     def __eq__(self, other):
@@ -32,6 +32,7 @@ book1 = Book("The Da Vinci Code", "Dan Brown", 435)
 book2 = Book("A Thousand Splendid Suns", "Khaled Hosseini", 354)
 book3 = Book("Midnight's Children", "Salman Rushdie", 250)
 
+print(book1)
 print(book2 == book1)
 print(book1 > book2)
 print(book1["author"])

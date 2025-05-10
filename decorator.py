@@ -14,9 +14,9 @@ def a_new_decorator(func):
     return wrapTheFunction
 
 def a_function_requiring_decoration():
-    print("A function which needs some decoration to remove my foul smell")
+    print("A function which needs some decoration to remove it's foul smell")
 
-a_function_requiring_decoration() # Output: A function which needs some decoration to remove my foul smell
+a_function_requiring_decoration() # Output: A function which needs some decoration to remove it's foul smell
 
 # @a_new_decorator is just a shorthand for
 a_function_requiring_decoration = a_new_decorator(a_function_requiring_decoration)
@@ -25,7 +25,7 @@ a_function_requiring_decoration()
 
 # Output: 
 # Working before executing func
-# A function which needs some decoration to remove my foul smell
+# A function which needs some decoration to remove it's foul smell
 # Working after executing func
 
 # Using @
@@ -64,7 +64,7 @@ print(a_function_with_wraps.__name__)
 
 # Example 2
 def add_sprinkles(func):
-    def wrapper(*args, **kwargs): # wrapper function is required to avoid calling the decorator function at @add_sprinkles
+    def wrapper(*args, **kwargs): # wrapper function is required to avoid calling the decorated function at @add_sprinkles
         print("You add sprinkles")
         func(*args, **kwargs)
     return wrapper
