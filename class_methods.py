@@ -32,6 +32,7 @@ bob.get_student_count() # Instance can access the class method
 # EXTRA: HOW TO MAKE A METHOD INACCESSIBLE TO INSTANCES
 class MyClass:
 
+    @classmethod
     def class_only(cls):
         if not isinstance(cls, type):
             raise TypeError("Use the method on the class, cannot be called by an instance")
@@ -39,6 +40,6 @@ class MyClass:
 
 my_instance = MyClass()
 
-MyClass.class_only(MyClass) # Output: Class-only method
+MyClass.class_only() # Output: Class-only method
 
 my_instance.class_only() # TypeError: Use the method on the class, cannot be called by an instance
