@@ -102,3 +102,10 @@
 - except: handling of exception is implemented in except block
 - else: Code that should run only if no exception occurs in try but for which exceptions should not be caught is put in else block
 - finally: Code in the finally block will run whether or not an exception occurred
+
+# 19. Generators
+
+- Iterable - any object in python which has \_\_iter\_\_ or \_\_getitem\_\_ method defined, returns an iterator
+- Iterator - any object in python which has \_\_next\_\_ or next() method defined
+- Generators are iterators, can only be iterated over once, do not store values in memory, generate values on the fly
+- Generators are implemented as function, they do not return a value, they yield
