@@ -115,3 +115,13 @@
 - Used to perform multiple tasks concurrently (multitasking)
 - Good for I/O bound tasks like reading files or fetching data from APIs
 - threading.Thread(target=my_function)
+
+# 21. Arbitrary arguments and keyword arguments
+
+- Arbitrary = varying amounts of arguments
+- To accept varying amounts of arguments, we can use \*args or \*\*kwargs
+- \*args = arguments - allows you to pass multiple non-key arguments
+- \*kwargs = keyword arguments - allows you to pass multiple keyword arguments
+- Prefix each with an unpacking operator (\*)
+- All the non-key arguments are packed in a tuple for \*args
+- All the keyword arguments are packed in a dictionary for \*\*kwargs
