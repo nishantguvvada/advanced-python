@@ -109,3 +109,9 @@
 - Iterator - any object in python which has \_\_next\_\_ or next() method defined
 - Generators are iterators, can only be iterated over once, do not store values in memory, generate values on the fly
 - Generators are implemented as function, they do not return a value, they yield
+
+# 20. Multi-threading
+
+- Used to perform multiple tasks concurrently (multitasking)
+- Good for I/O bound tasks like reading files or fetching data from APIs
+- threading.Thread(target=my_function)
