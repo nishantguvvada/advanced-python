@@ -1,6 +1,6 @@
 # Arbitrary = varying amounts of arguments
 # *args = arguments - allows you to use multiple non-key arguments
-# *kwargs = keyword arguments - allows you to use mutlple keyword arguments
+# **kwargs = keyword arguments - allows you to use mutlple keyword arguments
 # Prefix each with an unpacking operator (*)
 # All the non-key arguments are packed in a tuple
 # All the keyword arguments are packed in a dictionary

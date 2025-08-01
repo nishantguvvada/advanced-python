@@ -31,6 +31,7 @@
 ## 6. Static method
 
 - Methods that belong to the class rather than any object of the class, used for general utility functions
+- Static methods are regular functions defined within the scope of a class. They are used for utility functions that are logically related to the class but do not require access to either instance-specific data or class-specific data. They operate purely on the arguments passed to them.
 - Instance methods are best for operations on instances of the class
 - Static method can be accessed by the instance
 
