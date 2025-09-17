@@ -137,3 +137,8 @@
 
 - Every class inherits from `object`
 - Every class is an instance of `type`
+
+# 24. Singleton: Creation Design Pattern
+
+- A singleton pattern in python is a design pattern to create just one instance of a class
+- To limit concurrent access to a shared resource, to create a global point of access, to create just one instance of a class
