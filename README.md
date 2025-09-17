@@ -132,3 +132,8 @@
 - By default, Python uses a dict to store an object's instance attributes.
 - The dict wastes a lot of RAM.
 - Usage of \_\_slots\_\_ tells Python not to use a dict, and only allocate space for a fixed set of attributes.
+
+# 23. The root base class: `object`
+
+- Every class inherits from `object`
+- Every class is an instance of `type`
