@@ -126,3 +126,9 @@
 - Prefix each with an unpacking operator (\*)
 - All the non-key arguments are packed in a tuple for \*args
 - All the keyword arguments are packed in a dictionary for \*\*kwargs
+
+# 22. \_\_slots\_\_
+
+- By default, Python uses a dict to store an object's instance attributes.
+- The dict wastes a lot of RAM.
+- Usage of \_\_slots\_\_ tells Python not to use a dict, and only allocate space for a fixed set of attributes.
